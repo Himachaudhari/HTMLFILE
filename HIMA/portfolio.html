@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu-deveper portfolio</title>
+    <link<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: rgb(3, 38, 52);
+                color: white;
+                font-family: 'poppins', sans-serif;
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 80px;
+                background-color: rgb(29, 131, 171);
+            }
+
+            nav ul {
+                display: flex;
+                justify-content: center;
+            }
+
+            nav ul li {
+                list-style: none;
+                margin: 0 23px;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: white;
+
+            }
+
+            nav ul li a:hover {
+                color: rgb(8, 58, 79);
+                font-size: 1.01rem;
+
+
+            }
+
+            main hr {
+                border: 0;
+                background: #205a6c;
+                height: 1.2px;
+                margin: 60px 84px;
+            }
+
+            .left {
+                font-size: 1.5rem;
+            }
+
+            .firstsection {
+                display: flex;
+                justify-content: space-around;
+                margin: 130px 0;
+            }
+
+            .firstsection>div {
+                width: 30%;
+
+            }
+
+            .leftsecotion {
+                font-size: 2rem;
+                margin: 70px 0;
+
+
+            }
+
+            .rightsecotion img {
+                width: 80%;
+                margin: 50px 0;
+            }
+
+            .purple {
+                color: red;
+
+            }
+
+            .text-gray {
+                color: gray;
+            }
+
+            #element {
+                color: red;
+            }
+
+            .secondsection {
+                max-width: 80vw;
+                margin: auto;
+                height: 80vh;
+            }
+
+            .secondsection h1 {
+                font-size: 2.5rem;
+            }
+
+            .secondsection .box {
+                background-color: white;
+                width: 80vw;
+                height: 2px;
+                margin: 56px 0;
+                display: flex;
+
+            }
+
+            .secondsection .vertical {
+                height: 93px;
+                width: 1px;
+                background-color: white;
+                margin: 0 100px;
+
+            }
+
+            .image-top {
+                width: 50px;
+                position: relative;
+                top: -50px;
+                left: -8px;
+            }
+
+            .vertical-title {
+                position: relative;
+                top: 75px;
+                width: 150px;
+            }
+
+            .vartical.desc {
+                position: relative;
+                top: 86px;
+                color: grey;
+                width: 150px;
+                font-size: 9px;
+            }
+        </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Himanshu portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Service</a></li>
+                    <li><a href="/">Project</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsecotion">
+                Hello! My Name is <span class="purple">Himanshu</span>
+                <div>and I am Passionate </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsecotion">
+                <img src="wd.png" alt="">
+
+            </div>
+
+
+        </section>
+        <hr>
+
+        <section class="secondsection">
+            <span class="text-gray"> What I have done so far</span>
+            <h1>Work Experince</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top " src="pngwing.com.png" alt="">
+                    <div vertical-text>
+                        HTML Developer (2010-2015)
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="pngwing.com.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vartical desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        Libero unde omnis ullam, enim facilis possimus accus
+                        Dolores mollitia odio quos. Facilis, incidunt?
+                    </div>
+                </div>
+                
+                <div class="vertical">
+                    Node.js Developer (2012-2014)
+                </div>
+              
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Video Editor', 'Web desiginer ',],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
